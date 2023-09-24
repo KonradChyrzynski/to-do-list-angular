@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'to-do-app-kc';
+
+  addTask(newTask: string)
+  {
+    console.log(newTask)
+  }
 }
