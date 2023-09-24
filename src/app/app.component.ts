@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'to-do-app-kc';
 
+  tasks: string[] = [];
+
   addTask(newTask: string)
   {
-    console.log(newTask)
+    this.tasks.push(newTask)
   }
+
 }

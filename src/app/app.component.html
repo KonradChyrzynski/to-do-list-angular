@@ -305,7 +305,9 @@
 <div class="content" role="main">
   <h1>Task Manager</h1>
   <app-task-input (newTaskEvent)="addTask($event)"></app-task-input>
-  <h2>Next Steps</h2>
-  <app-task></app-task>
+  <h2>All tasks</h2>
+  <div *ngFor = "let task of tasks">
+    <app-task [task]="task"></app-task>
+  </div>
 </div>
 <router-outlet></router-outlet>
